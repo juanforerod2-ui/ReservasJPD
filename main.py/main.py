@@ -4,6 +4,10 @@ siguiente_id = 1
 def agendar_cita():
     print("\n---------- AGENDAR CITA ----------")
     global siguiente_id
+    fecha = input("Ingrese la fecha de la cita (dd/mm/aaaa): ")
+    if fecha == "":
+        print("La fecha no puede estar vacía.")
+        return
     cita = {
     "id": siguiente_id,
     "nombre": input("Nombre del paciente: "),
