@@ -37,7 +37,8 @@ def ver_reservas():
 
 def cancelar_reserva():
     print("\n---------- CANCELAR RESERVA ----------")
-    if not citas:
+    if not id_cancelar:
+        print("No hay reservas para cancelar.")
         return
     try: 
         # Uso try por si se llega a crashear o danar el codigo.
