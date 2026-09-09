@@ -41,7 +41,7 @@ def ver_reservas():
 
 def cancelar_reserva():
     print("\n---------- CANCELAR RESERVA ----------")
-    if not id_cancelar:
+    if not citas:
         print("No hay reservas para cancelar.")
         return
     try: 
